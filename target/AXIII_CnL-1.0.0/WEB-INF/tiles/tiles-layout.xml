@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<!-- tiles layout 설정 -->
+
+<tiles-definitions>
+    
+	<!-- tiles form 1 (cmnt)-->
+	<definition name="layout-tiles" template="/WEB-INF/tiles/layout/layout-tiles-cmnt.jsp"> 
+		<put-attribute name="header" value="/WEB-INF/tiles/tile/cmnt/header.jsp" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/tile/cmnt/footer.jsp" />
+	</definition>
+
+	<definition name="*.cm" extends="layout-tiles">
+		<put-attribute name="content" value="/WEB-INF/jsp/{1}.jsp"/>
+	</definition>
+	<definition name="*/*.cm" extends="layout-tiles">
+		<put-attribute name="content" value="/WEB-INF/jsp/{1}/{2}.jsp"/>
+	</definition>
+	<definition name="*/*/*.cm" extends="layout-tiles">
+		<put-attribute name="content" value="/WEB-INF/jsp/{1}/{2}/{3}.jsp"/>
+	</definition>
+	<definition name="*/*/*/*.cm" extends="layout-tiles">
+		<put-attribute name="content" value="/WEB-INF/jsp/{1}/{2}/{3}/{4}.jsp"/>
+	</definition>
+	<!-- tiles form 1 (cmnt)--> 
+	
+	<!-- tiles form 2 (lab)-->
+	<definition name="layout-tiles-lab" template="/WEB-INF/tiles/layout/layout-tiles-lab.jsp"> 
+		<put-attribute name="header" value="/WEB-INF/tiles/tile/lab/header.jsp" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/tile/lab/footer.jsp" />
+	</definition>
+	
+	<definition name="*.lb" extends="layout-tiles-lab">
+		<put-attribute name="content" value="/WEB-INF/jsp/{1}.jsp"/>
+	</definition>
+	<definition name="*/*.lb" extends="layout-tiles-lab">
+		<put-attribute name="content" value="/WEB-INF/jsp/{1}/{2}.jsp"/>
+	</definition>
+	<definition name="*/*/*.lb" extends="layout-tiles-lab">
+		<put-attribute name="content" value="/WEB-INF/jsp/{1}/{2}/{3}.jsp"/>
+	</definition>
+	<definition name="*/*/*/*.lb" extends="layout-tiles-lab">
+		<put-attribute name="content" value="/WEB-INF/jsp/{1}/{2}/{3}/{4}.jsp"/>
+	</definition>
+	<!-- tiles form 2 (lab)--> 
+    
+	<!-- tiles form 3 (admin) -->
+	<definition name="layout-admin" template="/WEB-INF/tiles/layout/layout-admin.jsp"> 
+		<put-attribute name="header" value="/WEB-INF/tiles/tile/admin/header.jsp" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/tile/admin/footer.jsp" />
+	</definition>
+	
+	<definition name="*.ad" extends="layout-admin">
+		<put-attribute name="content" value="/WEB-INF/jsp/{1}.jsp"/>
+	</definition>
+	<definition name="*/*.ad" extends="layout-admin">
+		<put-attribute name="content" value="/WEB-INF/jsp/{1}/{2}.jsp"/>
+	</definition>
+	<definition name="*/*/*.ad" extends="layout-admin">
+		<put-attribute name="content" value="/WEB-INF/jsp/{1}/{2}/{3}.jsp"/>
+	</definition>
+	<definition name="*/*/*/*.ad" extends="layout-admin">
+		<put-attribute name="content" value="/WEB-INF/jsp/{1}/{2}/{3}/{4}.jsp"/>
+	</definition>
+	<!-- tiles form 3 (admin) -->
+	
+	<!-- non tiles form -->
+	<definition name="layout-notiles" template="/WEB-INF/tiles/layout/layout-notiles.jsp"> 
+		<put-attribute name="content" value="" />
+	</definition>
+	
+	<definition name="*.nn" extends="layout-notiles">
+		<put-attribute name="content" value="/WEB-INF/jsp/{1}.jsp"/>
+	</definition>
+	<definition name="*/*.nn" extends="layout-notiles">
+		<put-attribute name="content" value="/WEB-INF/jsp/{1}/{2}.jsp"/>
+	</definition>
+	<definition name="*/*/*.nn" extends="layout-notiles">
+		<put-attribute name="content" value="/WEB-INF/jsp/{1}/{2}/{3}.jsp"/>
+	</definition>	
+	<definition name="*/*/*/*.nn" extends="layout-notiles">
+		<put-attribute name="content" value="/WEB-INF/jsp/{1}/{2}/{3}/{4}.jsp"/>
+	</definition>	
+	<!-- non tiles form -->
+	
+</tiles-definitions>       
