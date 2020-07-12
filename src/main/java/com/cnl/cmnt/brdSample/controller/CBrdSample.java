@@ -22,7 +22,7 @@ import org.springmodules.validation.commons.DefaultBeanValidator;
  * @see
  */
 @Controller
-@RequestMapping(value = "/a")
+@RequestMapping(value = "")
 public class CBrdSample {
 
 	/** SBrdSample 
@@ -40,7 +40,7 @@ public class CBrdSample {
 	 * @return "brdSampleList"
 	 * @exception Exception
 	 */
-	@RequestMapping(value = "/b")
+	@RequestMapping(value = "/index")
 	public String selectBrdSample(SessionStatus status) throws Exception {
 		
 		status.setComplete(); // 세션의 중복요청 제거
