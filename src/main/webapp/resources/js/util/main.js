@@ -41,10 +41,16 @@ $(window).on('load', function() {
 	}
 
 	// 상단 메뉴 active 이벤트
-	var url = document.location.href;
+	var url = document.location.href; // ex) http://domain/index/preview
 	var crrClass = url.split('/')[4];
-	$('#preview').addClass('menu--active')
+
+	if(crrClass == undefined) { // 초기화면 로드시 (http://domain)
+		$('.mobile__menu #preview').addClass('menu--active');
+		$('.main__menu #preview').addClass('menu--active');
+	}
+	$('.main__menu #'+crrClass+'').removeClass('menu--active');
 	$('.main__menu #'+crrClass+'').addClass('menu--active');
+	
 });
 /*
 function loadLocation(url){
