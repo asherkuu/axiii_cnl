@@ -431,18 +431,31 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .main__menu ul li>a:after {
+/* 	position: absolute; */
+/* 	content: ""; */
+/* 	width: 0; */
+/* 	height: 6px; */
+/* 	left: 0; */
+/* 	bottom: 8px; */
+/* 	background: #0ECE91; */
+/* 	z-index: -1; */
+/* 	-webkit-transition: 0.3s; */
+/* 	-moz-transition: 0.3s; */
+/* 	-o-transition: 0.3s; */
+/* 	transition: 0.3s; */
+	
 	position: absolute;
-	content: "";
-	width: 0;
-	height: 6px;
-	left: 0;
-	bottom: 8px;
-	background: #0ECE91;
-	z-index: -1;
-	-webkit-transition: 0.3s;
-	-moz-transition: 0.3s;
-	-o-transition: 0.3s;
-	transition: 0.3s;
+    content: "";
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 13.5px;
+    background: #000000;
+    z-index: -1;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 
 .main__menu ul li>a:hover,
@@ -670,18 +683,31 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .filter-controls ul li:before {
+/* 	position: absolute; */
+/* 	content: ""; */
+/* 	width: 0; */
+/* 	height: 6px; */
+/* 	left: 0; */
+/* 	bottom: 4px; */
+/* 	background: #0ECE91; */
+/* 	z-index: -1; */
+/* 	-webkit-transition: 0.3s; */
+/* 	-moz-transition: 0.3s; */
+/* 	-o-transition: 0.3s; */
+/* 	transition: 0.3s; */
+	
 	position: absolute;
-	content: "";
-	width: 0;
-	height: 6px;
-	left: 0;
-	bottom: 4px;
-	background: #0ECE91;
-	z-index: -1;
-	-webkit-transition: 0.3s;
-	-moz-transition: 0.3s;
-	-o-transition: 0.3s;
-	transition: 0.3s;
+    content: "";
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 9.6px;
+    background: #000000;
+    z-index: -1;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 
 .filter-controls ul li:hover,
@@ -1491,18 +1517,31 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .album__link:after {
+/* 	position: absolute; */
+/* 	content: ""; */
+/* 	width: 0; */
+/* 	height: 6px; */
+/* 	left: 0; */
+/* 	bottom: 8px; */
+/* 	background: #0ECE91; */
+/* 	z-index: -1; */
+/* 	-webkit-transition: 0.3s; */
+/* 	-moz-transition: 0.3s; */
+/* 	-o-transition: 0.3s; */
+/* 	transition: 0.3s; */
+	
 	position: absolute;
-	content: "";
-	width: 0;
-	height: 6px;
-	left: 0;
-	bottom: 8px;
-	background: #0ECE91;
-	z-index: -1;
-	-webkit-transition: 0.3s;
-	-moz-transition: 0.3s;
-	-o-transition: 0.3s;
-	transition: 0.3s;
+    content: "";
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 16.5px;
+    background: #000000;
+    z-index: -1;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 
 .album__link:hover {

@@ -6,12 +6,15 @@
 	String ctxPath = request.getContextPath();
 %>    
 <!DOCTYPE html>
-<html>
+<html lang="zxx">
 <head>
-	<title></title>
-	
+
 	<meta charset="UTF-8">
+	<meta name="description" content="SUNZINE Photo Studio HTML Template">
+	<meta name="keywords" content="photo, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>AXIII3</title>
 	
 	<!-- load JS files -->
 	<script src="${ctxPath}/resources/js/loader/js-package.js"></script>

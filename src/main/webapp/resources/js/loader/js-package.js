@@ -25,7 +25,7 @@ var AppLibFiles = {
 //				"resources/js/util/html5shiv.min.js",			// html5shiv
 //				"resources/js/util/respond-1.4.2.min.js",			// respond-1.4.2.min
 //				"resources/js/util/rocket-loader.js",			// rocket-loader
-//				"resources/js/util/slicknav.min.js",			// slicknav
+				"resources/js/util/slicknav.min.js",			// slicknav
 			
 			],
 			

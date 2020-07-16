@@ -9,6 +9,13 @@
 
 'use strict';
 
+$(function() {	
+	$('.main__menu ul li>a').on('click',function(){ 
+		$('.main__menu ul li>a').removeClass('menu--active');
+		$(this).addClass('menu--active');
+	});
+}); 
+
 $(window).on('load', function() {
 	/*------------------
 		Preloder
@@ -33,8 +40,18 @@ $(window).on('load', function() {
 		$('.blog_row').masonry();
 	}
 
+	// 상단 메뉴 active 이벤트
+	var url = document.location.href;
+	var crrClass = url.split('/')[4];
+	$('#preview').addClass('menu--active')
+	$('.main__menu #'+crrClass+'').addClass('menu--active');
 });
-
+/*
+function loadLocation(url){
+	$('#content').children().remove();
+	$('#content').load(url);
+}
+*/
 (function($) {
 
 	/*------------------
@@ -105,6 +122,7 @@ $(window).on('load', function() {
 		e.preventDefault();
 	});
 
+	
 
 	/*-------------------
 		Albums Slider
