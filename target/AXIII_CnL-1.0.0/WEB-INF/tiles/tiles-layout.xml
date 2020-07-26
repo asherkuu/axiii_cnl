@@ -7,22 +7,22 @@
 <tiles-definitions>
     
 	<!-- tiles form 1 (cmnt)-->
-	<definition name="layout-tiles" template="/WEB-INF/tiles/layout/layout-tiles-cmnt.jsp"> 
+	<definition name="layout-tiles-cmnt" template="/WEB-INF/tiles/layout/layout-tiles-cmnt.jsp"> 
 		<put-attribute name="header" value="/WEB-INF/tiles/tile/cmnt/header.jsp" />
 		<put-attribute name="content" value="" />
 		<put-attribute name="footer" value="/WEB-INF/tiles/tile/cmnt/footer.jsp" />
 	</definition>
 
-	<definition name="*.cm" extends="layout-tiles">
+	<definition name="*.cm" extends="layout-tiles-cmnt">
 		<put-attribute name="content" value="/WEB-INF/jsp/{1}.jsp"/>
 	</definition>
-	<definition name="*/*.cm" extends="layout-tiles">
+	<definition name="*/*.cm" extends="layout-tiles-cmnt">
 		<put-attribute name="content" value="/WEB-INF/jsp/{1}/{2}.jsp"/>
 	</definition>
-	<definition name="*/*/*.cm" extends="layout-tiles">
+	<definition name="*/*/*.cm" extends="layout-tiles-cmnt">
 		<put-attribute name="content" value="/WEB-INF/jsp/{1}/{2}/{3}.jsp"/>
 	</definition>
-	<definition name="*/*/*/*.cm" extends="layout-tiles">
+	<definition name="*/*/*/*.cm" extends="layout-tiles-cmnt">
 		<put-attribute name="content" value="/WEB-INF/jsp/{1}/{2}/{3}/{4}.jsp"/>
 	</definition>
 	<!-- tiles form 1 (cmnt)--> 
