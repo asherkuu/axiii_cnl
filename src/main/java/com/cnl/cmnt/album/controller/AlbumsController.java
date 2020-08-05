@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.support.SessionStatus;
 
 /**
- * @Class Name : CMain.java
- * @Description : CMain.Class
+ * @Class Name : AlbumsController.java
+ * @Description : AlbumsController.Class
  * @Modification Information
  * @
  * @  수정일     		수정자             수정내용
@@ -20,11 +20,11 @@ import org.springframework.web.bind.support.SessionStatus;
  */
 @Controller
 @RequestMapping(value = "/view")
-public class CAlbums {
+public class AlbumsController {
 
-	/** SMain 
+	/** MainService 
 	@Autowired
-	private SMain mainService;
+	private MainService mainService;
 	*/
 	
 	/**
@@ -36,7 +36,6 @@ public class CAlbums {
 	 */
 	@RequestMapping(value = "/albums")
 	public String selectMain(SessionStatus status) throws Exception {
-		
 //		status.setComplete(); // 세션의 중복요청 제거
 		return "cmnt/albums/albums.cm";
 	}

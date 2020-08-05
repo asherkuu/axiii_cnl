@@ -449,7 +449,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
     width: 0;
     height: 2px;
     left: 0;
-    bottom: 13.5px;
+    bottom: 5.5px;
     background: #000000;
     z-index: -1;
     -webkit-transition: 0.3s;
@@ -701,7 +701,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
     width: 0;
     height: 2px;
     left: 0;
-    bottom: 9.6px;
+    bottom: 2.6px;
     background: #000000;
     z-index: -1;
     -webkit-transition: 0.3s;
@@ -1149,7 +1149,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 ------------*/
 
 .page__banner {
-	background-image: url("../resources/img/page-banner.jpg");
+	background-image: url("/resources/img/page-banner.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 300px;
@@ -1772,7 +1772,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 	padding: 25px 10px 5px 65px;
 	margin-bottom: 40px;
 	position: relative;
-	background-image: url("../resources/img/quote.png");
+	background-image: url("/resources/img/quote.png");
 	background-repeat: no-repeat;
 	background-position: left top;
 }

@@ -1,14 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
-
+<body>
 	<div id="preloder" style="display: none;">
 		<div class="loader" style="display: none;"></div>
 	</div>
 
 	<div class="offcanvas-menu-overlay"></div>
 	<div class="offcanvas-menu">
-		<a href="./index.html" class="site-logo"> 
+		<a href="/index/preview" class="site-logo"> 
 			<img src="/resources/img/logo.png" alt="">
 		</a>
 		<nav class="mobile__menu">
@@ -39,8 +39,8 @@
 							</ul>
 						</li>
 						-->
-						<li><a href="./blog.html" role="menuitem" id="artist">ARTIST</a></li>
-						<li><a href="./contact.html" role="menuitem" id="signIn">SIGN IN</a></li>
+						<li><a href="/view/artist" role="menuitem" id="artist">ARTIST</a></li>
+						<li><a href="/view/signIn" role="menuitem" id="signIn">SIGN IN</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -57,7 +57,7 @@
 					<ul>	
 						<li><a href="/index/preview"id="preview">HOME</a></li>
 						<li><a href="/view/albums" id="albums">ALBUMS</a></li>
-						<li><a href="./about.html" id="artist">ARTIST</a>
+						<li><a href="/view/artist" id="artist">ARTIST</a>
 						<!--  
 							<ul class="sub__menu">
 								<li><a href="./albums-details.html">Albums Details</a></li>
@@ -65,7 +65,7 @@
 							</ul>
 						-->	
 						</li>
-						<li><a href="./contact.html" id="signIn">SIGN IN</a></li>
+						<li><a href="/view/signIn" id="signIn">SIGN IN</a></li>
 					</ul>
 				</nav>
 				<div class="header__switches">

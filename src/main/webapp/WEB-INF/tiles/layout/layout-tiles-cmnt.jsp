@@ -24,16 +24,16 @@
 
 <body>
 	<div id="cm_container">
-		<div id="header">
-			<tiles:insertAttribute name="header"/>
+		<div id="tiles_header">
+			<tiles:insertAttribute name="tiles_header"/>
 		</div>
 		
-		<div id="content">
-			<tiles:insertAttribute name="content"/>
+		<div id="tiles_content">
+			<tiles:insertAttribute name="tiles_content"/>
 		</div>
 		
-		<div id="footer">
-			<tiles:insertAttribute name="footer"/>
+		<div id="tiles_footer">
+			<tiles:insertAttribute name="tiles_footer"/>
 		</div>
 	</div>
 </body>
